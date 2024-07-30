@@ -22,8 +22,7 @@ parser.add_argument("--debug", action='store_true', default=False)
 args = parser.parse_args()
 
 #set logger
-npy_path = os.path.join(args.npy_path, 'img_npy')
-log_dir = os.path.dirname(npy_path, 'img_npy')
+log_dir = os.path.dirname(args.npy_path)
 logger = setup_logger("recovery", log_dir, 0, save_name='log_recovery.txt')
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
@@ -33,17 +32,27 @@ Generator = define_G(input_nc=3, output_nc=3, ngf=64, netG=args.generator).to(de
 Loss_l1 = torch.nn.L1Loss()
 Generator_optimizer = optim.Adam(Generator.parameters(), lr=args.lr)
 
-
-data = os.listdir(npy_path)
+data = os.listdir(args.npy_path)
 data.sort()   # important code
 
-train_ori_datas = [os.path.join(npy_path, d) for d in data if 'clean-train' in d and 'images' in d]
-train_enc_datas = [os.path.join(npy_path, d) for d in data if 'encry-train' in d and 'images' in d]
-test_ori_datas = [os.path.join(npy_path, d) for d in data if 'clean-test' in d and 'images' in d]
-test_enc_datas = [os.path.join(npy_path, d) for d in data if 'encry-test' in d and 'images' in d]
+train_ori_datas = [os.path.join(args.npy_path, d) for d in data if 'clean-train' in d and 'images' in d]
+train_enc_datas = [os.path.join(args.npy_path, d) for d in data if 'encry-train' in d and 'images' in d]
+test_ori_datas = [os.path.join(args.npy_path, d) for d in data if 'clean-test' in d and 'images' in d]
+test_enc_datas = [os.path.join(args.npy_path, d) for d in data if 'encry-test' in d and 'images' in d]
 
 if len(test_ori_datas)==0 or len(train_enc_datas)==0 or len(test_ori_datas)==0 or len(test_enc_datas)==0:
     assert ValueError, "please check your datas"
+
+# make sure each ori_data and enc_data are pairs of the same ID
+for i in range(len(train_ori_datas)):
+    train_ori = train_ori_datas[i]
+    train_enc = train_enc_datas[i]
+    if train_ori.replace("clean-train","encry-train") != train_enc:
+        raise ValueError("Please make sure each ori_data and enc_data are pairs of the same ID")
+    test_ori = test_ori_datas[i]
+    test_enc = test_enc_datas[i]
+    if test_ori.replace("clean-test","encry-test") != test_enc:
+        raise ValueError("Please make sure each ori_data and enc_data are pairs of the same ID")
 
 
 def normalize(noise, max_num=255, min_num=0):
