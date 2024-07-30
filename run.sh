@@ -17,6 +17,6 @@ CUDA_VISIBLE_DEVICES=0 python protect_image.py \
 
 
 # recovery attack
-CUDA_VISIBLE_DEVICES=4 python recovery_attack.py --npy_path 'log/market1501_protect/img_npy' 
+CUDA_VISIBLE_DEVICES=4 python recovery_attack.py --npy_path 'log/market1501_protect' 
 
-CUDA_VISIBLE_DEVICES=5 python recovery_attack.py --npy_path 'log/cuhk03_protect/img_npy' 
+CUDA_VISIBLE_DEVICES=5 python recovery_attack.py --npy_path 'log/cuhk03_protect' 
