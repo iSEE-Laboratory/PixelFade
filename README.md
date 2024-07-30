@@ -52,6 +52,11 @@ Extensive experiments demonstrate that our PixelFade outperforms previous method
 
 - Python = 3.9
 - PyTorch == 1.12.0+cu116
+- numpy
+- pytorch-ignite=0.1.2
+- yacs
+- scipy=1.2.1
+- piq
 
 ## Dataset preparation
 
