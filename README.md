@@ -53,6 +53,15 @@ Extensive experiments demonstrate that our PixelFade outperforms previous method
 - Python = 3.9
 - PyTorch == 1.12.0+cu116
 
+## Dataset preparation
+
+Take Market1501 as example, download Market-1501 and modify the DATASETS.ROOT_DIR in configs/AGW_baseline_market1501.yml.
+
+ - [Market1501](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Zheng_Scalable_Person_Re-Identification_ICCV_2015_paper.pdf)
+
+ - [CUHK03](https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Li_DeepReID_Deep_Filter_2014_CVPR_paper.pdf)
+
+ - [MSMT17](https://arxiv.org/pdf/1711.08565)
 
 
 ## 🌐 Download Pre-trained Models
@@ -66,7 +75,7 @@ You can download our pre-trained AGW Re-ID models from google drive:
 - [Trained on MSMT17](https://drive.google.com/file/d/1zZXwgJ8BuRMjqimY7mqli-tFlX9GgO6M/view?usp=drive_link)
 
 ## How to run?
-You can refer to `run.sh` for running protection or recovery attack.
+You can refer to `run.sh` for running protection or recovery attack. Here we take Market1501 as an example.
 
 -  🔐 Protect images of Re-ID dataset and get Re-ID metrics
 
