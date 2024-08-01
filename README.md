@@ -21,7 +21,7 @@ Official repository of ACMMM 2024 paper "PixelFade: Privacy-preserving person re
 
 3. **Simple Integration**: If you have a pre-trained ReID model, you can directly use our algorithm to protect images.
 
-4. **Scalability to Various ReID Scenarios**: Extends seamlessly to various re-identification (ReID) scenarios (such as infrared ReID and text-to-image ReID).
+4. **Scalability to Various ReID Scenarios**: Extends seamlessly to various ReID scenarios (such as infrared ReID and text-to-image ReID).
 
 
 
