@@ -1,4 +1,4 @@
-# <p align="center">PixelFade: Privacy-preserving person re-identification with noise-guided progressive replacement</p>
+# <p align="center">PixelFade: Privacy-preserving Person Re-identification with Noise-guided Progressive Replacement</p>
 
 ### <p align="center">*Delong Zhang, Yi-Xing Peng, Xiao-ming Wu, Ancong Wu, Wei-shi Zheng*</p>
 
@@ -31,7 +31,8 @@ Online person re-identification services face privacy breaches from potential da
 The privacy protection of pedestrian images is crucial.
 Previous privacy-preserving person re-identification methods are unable to resist recovery attacks and compromise accuracy.
 In this paper, we propose an iterative method (**PixelFade**) to optimize pedestrian images into noise-like images to resist recovery attacks.
-Specifically, we propose Noise-guided Objective Function with the feature constraints of a specific authorization model, optimizing pedestrian images to **normal-distributed noise images** while preserving their original identity information as per the authorization model.
+We first give an in-depth study of protected images from previous privacy methods, which reveal that the chaos of protected images can disrupt the learning of recovery models.
+Accordingly, we propose Noise-guided Objective Function with the feature constraints of a specific authorization model, optimizing pedestrian images to **normal-distributed noise images** while preserving their original identity information as per the authorization model.
 To solve the above non-convex optimization problem, we propose a heuristic optimization algorithm that alternately performs the Constraint Operation and the Partial Replacement operation.
 This strategy not only safeguards that original pixels are replaced with noises to protect privacy, but also guides the images towards an improved optimization direction to effectively preserve discriminative features.
 Extensive experiments demonstrate that our PixelFade outperforms previous methods in resisting recovery attacks and Re-ID performance.
