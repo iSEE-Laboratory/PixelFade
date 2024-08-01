@@ -93,7 +93,7 @@ python protect_image.py --config_file 'configs/AGW_baseline_market1501.yml'\
 - 👿 lauch recovery attack
 
 ```sh
-python recovery_attack.py --npy_path 'log/market1501_protect/img_npy' 
+python recovery_attack.py --npy_path 'log/market1501_protect' 
 ```
 
 
