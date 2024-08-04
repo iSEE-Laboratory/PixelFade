@@ -10,7 +10,7 @@ Official repository of ACMMM 2024 paper "PixelFade: Privacy-preserving person re
 
 ## 💬 News
 - [2024.07.30] Code of PixelFade is available. We also release Pre-trained Re-ID models.
-- [2024.07.16] 🎊🥳🎉 Our work is accepted by ACMMM 2024!!! Thanks to co-workers and ISEE! Special thank to [Xiaoming Wu]{https://dravenalg.github.io/}!!
+- [2024.07.16] 🎊🥳🎉 Our work is accepted by ACMMM 2024!!! Thanks to co-workers and ISEE! Special thank to [Xiaoming Wu](https://dravenalg.github.io/)!!
 
 
 ## 🚀 **Key Features:**
