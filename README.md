@@ -116,7 +116,7 @@ To be done
 - [x] PixelFade algorithm code
 - [x] Model weights
 - [x] Eval code (Re-ID, Recovery attack)
-- [ ] Paper
+- [x] Paper
 - [ ] Inference code for any pre-trained Re-ID model
 
 
