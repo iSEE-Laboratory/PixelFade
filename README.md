@@ -2,7 +2,7 @@
 
 ### <p align="center">*Delong Zhang, Yi-Xing Peng, Xiao-ming Wu, Ancong Wu, Wei-shi Zheng*</p>
 
-#### <p align="center">[[Paper]](https://openreview.net/pdf?id=TFueeF3aTo) </p>
+#### <p align="center">[[Paper]](https://arxiv.org/pdf/2408.05543) </p>
 
 Official repository of ACMMM 2024 paper "PixelFade: Privacy-preserving person re-identification with noise-guided progressive replacement".
 
