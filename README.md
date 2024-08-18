@@ -107,7 +107,12 @@ We would like to thank the contributors to the [AGW](https://github.com/mangye16
 If you find PixelFade useful for your research and applications, please cite using this BibTeX:
 
 ```bibtex
-To be done
+@article{zhang2024pixelfade,
+  title={PixelFade: Privacy-preserving Person Re-identification with Noise-guided Progressive Replacement},
+  author={Zhang, Delong and Peng, Yi-Xing and Wu, Xiao-Ming and Wu, Ancong and Zheng, Wei-Shi},
+  journal={arXiv preprint arXiv:2408.05543},
+  year={2024}
+}
 ```
 
 
