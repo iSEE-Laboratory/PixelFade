@@ -13,7 +13,7 @@ Official repository of ACMMM 2024 paper "PixelFade: Privacy-preserving person re
 - [2024.07.16] 🎊🥳🎉 Our work is accepted by ACMMM 2024!!! Thanks to co-workers and ISEE! Special thank to [Xiaoming Wu](https://dravenalg.github.io/)!!
 
 
-## 🚀 **Key Features:**
+## 🚀 **Key Features**
 
 1. **Noise-like Protection**: Converts pedestrian images into noise for visual protection.
 
@@ -91,7 +91,7 @@ python protect_image.py --config_file 'configs/AGW_baseline_market1501.yml'\
     --output 'log/market1501_protect' --save_image_npy
 ```
 
-- 👿 lauch recovery attack
+- 👿 launch recovery attack
 
 ```sh
 python recovery_attack.py --npy_path 'log/market1501_protect' 
